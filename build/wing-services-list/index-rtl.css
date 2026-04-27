@@ -1,0 +1,52 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/wing-services-list/editor.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+/**
+ * Wing Services List — editor-only styles.
+ */
+.wp-block-create-block-wing-services-list .wing-services__heading [data-rich-text-placeholder]::before,
+.wp-block-create-block-wing-services-list .wing-services__subheading [data-rich-text-placeholder]::before,
+.wp-block-create-block-wing-services-list .wing-services__card-title [data-rich-text-placeholder]::before,
+.wp-block-create-block-wing-services-list .wing-services__card-description [data-rich-text-placeholder]::before {
+  opacity: 0.5;
+}
+.wp-block-create-block-wing-services-list .wing-services__media {
+  position: relative;
+  overflow: visible;
+}
+.wp-block-create-block-wing-services-list .wing-services__media-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+  border-radius: var(--wing-services-image-radius);
+}
+.wp-block-create-block-wing-services-list .wing-services__media-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.wp-block-create-block-wing-services-list .wing-services__media-replace {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 10;
+}
+.wp-block-create-block-wing-services-list .wing-services__media:hover .wing-services__media-replace,
+.wp-block-create-block-wing-services-list .wing-services__media:focus-within .wing-services__media-replace {
+  opacity: 1;
+}
+.wp-block-create-block-wing-services-list .wing-services__remove {
+  margin-top: 1rem;
+  align-self: flex-start;
+}
+.wp-block-create-block-wing-services-list .wing-services__add {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}

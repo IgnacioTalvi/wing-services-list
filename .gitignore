@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Build output is checked in (WordPress plugins ship the build/ folder
+# so users can install without running npm install).
+# If you'd rather generate it fresh on each install, uncomment:
+# build/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage / testing
+coverage
+
+# npm
+.npm
+*.tgz
+
+# wp-scripts
+*.zip
+
+# Environment
+.env
+
+# wp-env local overrides
+.wp-env.override.json
+
+# macOS
+.DS_Store
+
+# Editor config
+.idea/
+.vscode/
+*.swp
+*.swo

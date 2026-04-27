@@ -1,0 +1,80 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/wing-services-list",
+  "version": "0.1.0",
+  "title": "Wing Services List",
+  "category": "design",
+  "icon": "screenoptions",
+  "description": "Display a grid of services with titles, descriptions, and images.",
+  "keywords": [
+    "services",
+    "grid",
+    "cards",
+    "wing"
+  ],
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "default": "Our Services"
+    },
+    "subheading": {
+      "type": "string",
+      "default": "Everything you need to grow online"
+    },
+    "columns": {
+      "type": "number",
+      "default": 3
+    },
+    "services": {
+      "type": "array",
+      "default": [
+        {
+          "id": "service-1",
+          "title": "Service One",
+          "description": "A short description of this service.",
+          "imageId": 0,
+          "imageUrl": "",
+          "imageAlt": "",
+          "linkUrl": "",
+          "linkLabel": "Learn More",
+          "linkOpenInNewTab": false
+        },
+        {
+          "id": "service-2",
+          "title": "Service Two",
+          "description": "A short description of this service.",
+          "imageId": 0,
+          "imageUrl": "",
+          "imageAlt": "",
+          "linkUrl": "",
+          "linkLabel": "Learn More",
+          "linkOpenInNewTab": false
+        },
+        {
+          "id": "service-3",
+          "title": "Service Three",
+          "description": "A short description of this service.",
+          "imageId": 0,
+          "imageUrl": "",
+          "imageAlt": "",
+          "linkUrl": "",
+          "linkLabel": "Learn More",
+          "linkOpenInNewTab": false
+        }
+      ]
+    }
+  },
+  "textdomain": "wing-services-list",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

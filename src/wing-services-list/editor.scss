@@ -1,0 +1,59 @@
+/**
+ * Wing Services List — editor-only styles.
+ */
+
+.wp-block-create-block-wing-services-list {
+	.wing-services__heading,
+	.wing-services__subheading,
+	.wing-services__card-title,
+	.wing-services__card-description {
+		[data-rich-text-placeholder]::before {
+			opacity: 0.5;
+		}
+	}
+
+	.wing-services__media {
+		position: relative;
+		overflow: visible;
+	}
+
+	.wing-services__media-wrapper {
+		position: relative;
+		width: 100%;
+		aspect-ratio: 16 / 10;
+		overflow: hidden;
+		border-radius: var(--wing-services-image-radius);
+	}
+
+	.wing-services__media-wrapper img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		display: block;
+	}
+
+	.wing-services__media-replace {
+		position: absolute;
+		top: 0.5rem;
+		right: 0.5rem;
+		opacity: 0;
+		transition: opacity 0.2s ease;
+		z-index: 10;
+	}
+
+	.wing-services__media:hover .wing-services__media-replace,
+	.wing-services__media:focus-within .wing-services__media-replace {
+		opacity: 1;
+	}
+
+	.wing-services__remove {
+		margin-top: 1rem;
+		align-self: flex-start;
+	}
+
+	.wing-services__add {
+		margin-top: 1.5rem;
+		display: flex;
+		justify-content: center;
+	}
+}
